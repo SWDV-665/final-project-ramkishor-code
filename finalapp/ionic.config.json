@@ -1,0 +1,7 @@
+{
+  "name": "Billtracker",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

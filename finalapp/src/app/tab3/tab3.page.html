@@ -1,0 +1,72 @@
+<div class="bg-class">
+  <ion-header [translucent]="true" class="bg-class">
+    <ion-toolbar class="bg-class">
+      <ion-title>
+        Bill tracker
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content [fullscreen]="true">
+    <ion-fab vertical="top" horizontal="end" slot="fixed">
+      <ion-fab-button color="danger" (click)="logout()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    <ion-header collapse="condense">
+      <ion-toolbar class="bg-class">
+        <ion-title size="large" class="text-light">Bill tracker</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  
+  
+    <ion-list class="bg-class">
+      <ion-card class="bg-class">
+        <ion-card-header class="bg-class">
+          <ion-card-subtitle>Take action on billing items and scroll down to reload</ion-card-subtitle>
+          <ion-card-title>Pending Bills</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content  >
+          <ion-refresher  [enabled] = "rest" slot="fixed" (ionRefresh)="doRefresh($event)">
+            <ion-refresher-content></ion-refresher-content>
+          </ion-refresher>
+          <ion-card class="cardv bg-class2"  *ngFor="let item of items; let i = index">
+            <div class="info ">
+              <h2 class="text" ><b>{{item.name}}</b></h2><br>
+              <p>Billing Amount $ {{item.amount}}</p>
+              <p>Due day {{item.due_day}}</p>
+                <p>Bill Month {{item.month}}</p>
+      </div>
+            
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div>
+                  <ion-button expand="full" (click)="editItem(item, item._id)" color="danger">
+                    <ion-icon name="create-outline"></ion-icon>Already Paid</ion-button>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+      
+          
+            </ion-card>
+  
+  
+  
+    </ion-card-content>
+  </ion-card>
+  
+    
+        
+     
+    </ion-list>
+  
+  
+    
+  
+  </ion-content>
+
+  </div>
+  
