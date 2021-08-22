@@ -1,5 +1,0 @@
-# final-project-ramkishor-code
-final-project-ramkishor-code created by GitHub Classroom
-Project Idea Topic: Bill Tracker application
-Bill Tracker application is a hybrid mobile application works on both android and iOS devices. This app will keep the billing details provided by the user and the app will alert the user to keep the billing ready for hassle free billing before due date. This app will solve the problem users experiencing is, forgetting to pay the bill, missing payment dates and getting charged extra for missing payments and getting overcharged on some bills.
-Bill Tracker web application let users enter all their monthly bills, what amount they owe, when the bill is due and what account user usually pay with. The Bill Tracker web application lets user easily change the amount of the bill when they know the new amount due. The amount of your upcoming bills is also displayed at the top of the page so user can easily tell how much he/she need to plan on having available to pay the bills. The Bill Tracker also lets user to view a history of each bill payment, so they can see how much amount for the bill payment has changed over time. 
